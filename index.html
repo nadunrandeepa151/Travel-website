@@ -3,16 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website</title>
+    <title>Travel Website - Explore the World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Travel Website</h1>
-    </header>
-    <main>
-        <p>Discover amazing places around the world!</p>
-    </main>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-globe"></i> TravelHub
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore the world's most beautiful destinations</p>
+            <button class="cta-btn">Start Exploring</button>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beach">Beach</button>
+                <button class="filter-btn" data-filter="mountain">Mountain</button>
+                <button class="filter-btn" data-filter="city">City</button>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card" data-category="beach">
+                    <img src="https://via.placeholder.com/300x200?text=Bali" alt="Bali">
+                    <div class="card-content">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Beautiful beaches and tropical paradise</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8/5</span>
+                        </div>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="mountain">
+                    <img src="https://via.placeholder.com/300x200?text=Swiss+Alps" alt="Swiss Alps">
+                    <div class="card-content">
+                        <h3>Swiss Alps</h3>
+                        <p>Majestic mountains and scenic views</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5</span>
+                        </div>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="city">
+                    <img src="https://via.placeholder.com/300x200?text=Paris" alt="Paris">
+                    <div class="card-content">
+                        <h3>Paris, France</h3>
+                        <p>The city of love and romance</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7/5</span>
+                        </div>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="beach">
+                    <img src="https://via.placeholder.com/300x200?text=Maldives" alt="Maldives">
+                    <div class="card-content">
+                        <h3>Maldives</h3>
+                        <p>Crystal clear waters and luxury resorts</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5</span>
+                        </div>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="city">
+                    <img src="https://via.placeholder.com/300x200?text=Tokyo" alt="Tokyo">
+                    <div class="card-content">
+                        <h3>Tokyo, Japan</h3>
+                        <p>Modern metropolis with ancient traditions</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8/5</span>
+                        </div>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="mountain">
+                    <img src="https://via.placeholder.com/300x200?text=Himalayas" alt="Himalayas">
+                    <div class="card-content">
+                        <h3>Himalayas, Nepal</h3>
+                        <p>World's tallest peaks and adventure</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7/5</span>
+                        </div>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Travelers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Amazing experience! The destinations were incredible and the service was outstanding."</p>
+                    <h4>Sarah Johnson</h4>
+                    <span>USA</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"This website helped me plan my dream vacation perfectly. Highly recommended!"</p>
+                    <h4>Michael Chen</h4>
+                    <span>Canada</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best travel guide ever! Found so many hidden gems thanks to this platform."</p>
+                    <h4>Emma Martinez</h4>
+                    <span>Spain</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" id="name" required>
+                    <span class="error-msg" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" id="email" required>
+                    <span class="error-msg" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject" id="subject" required>
+                    <span class="error-msg" id="subjectError"></span>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" id="message" rows="5" required></textarea>
+                    <span class="error-msg" id="messageError"></span>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>TravelHub</h4>
+                <p>Your gateway to unforgettable adventures</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TravelHub. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
